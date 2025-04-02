@@ -34,6 +34,7 @@ Partial Class Form1
         answ = New Label()
         Button6 = New Button()
         Button7 = New Button()
+        Button8 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -139,11 +140,21 @@ Partial Class Form1
         Button7.Text = "Clear"
         Button7.UseVisualStyleBackColor = True
         ' 
+        ' Button8
+        ' 
+        Button8.Location = New Point(386, 98)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(150, 46)
+        Button8.TabIndex = 13
+        Button8.Text = "Back "
+        Button8.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(14F, 31F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(804, 453)
+        Controls.Add(Button8)
         Controls.Add(Button7)
         Controls.Add(Button6)
         Controls.Add(answ)
@@ -174,5 +185,6 @@ Partial Class Form1
     Friend WithEvents answ As Label
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
 
 End Class

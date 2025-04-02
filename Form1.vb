@@ -41,18 +41,24 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         op.Text = ""
         input.Text = ""
         answ.Text = "-"
     End Sub
 
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim lastSpaceIndex As Integer = op.Text.LastIndexOf(" ")
+        If lastSpaceIndex < 0 Then
+            op.Text = ""
+            Exit Sub
+        End If
+        Dim trimmedString As String = op.Text.Substring(0, lastSpaceIndex)
 
 
+        op.Text = trimmedString
+
+    End Sub
 
     ' input = input textbox
     ' answ =  Ans label
